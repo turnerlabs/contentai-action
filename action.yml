@@ -1,12 +1,6 @@
 name: Content AI CI/CD
 description: A Github Action for ContentAI
-inputs:
-  environment:
-    description: ContentAI environment
-    required: false
-    default: prod
+author: John Ritsema
 runs:
   using: docker
   image: Dockerfile
-  args:
-    - ${{ inputs.environment }}
