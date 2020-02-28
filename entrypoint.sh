@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
-if [ -n "$API_KEY" ]; then
-  echo "$API_KEY is required"
+if [ -z "$API_KEY" ]; then
+  echo "API_KEY is required"
   exit 1
 fi
 
