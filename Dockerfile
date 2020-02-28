@@ -4,8 +4,8 @@ FROM ubuntu
 ENV VERSION "http://get-cli.contentai.io/v0.10.0/ncd_linux_amd64"
 RUN apt-get update && \
     apt-get install curl -y && \
-    curl -fsSLo contentai $VERSION && \
-    chmod +x contentai && \
+    curl -fsSLo /usr/bin/contentai $VERSION && \
+    chmod +x /usr/bin/contentai && \
     rm -rf /var/lib/apt/lists/*
 
 ADD entrypoint.sh .
