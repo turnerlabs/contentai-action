@@ -6,7 +6,6 @@ RUN apt-get update && \
     apt-get install curl -y && \
     curl -fsSLo contentai $VERSION && \
     chmod +x contentai && \
-    mkdir -p ~/.contentai && \
     rm -rf /var/lib/apt/lists/*
 
 ADD entrypoint.sh .
