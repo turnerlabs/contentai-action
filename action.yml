@@ -1,0 +1,6 @@
+name: Content AI CI/CD
+description: A Github Action for ContentAI
+author: John Ritsema
+runs:
+  using: docker
+  image: Dockerfile
