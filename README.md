@@ -29,10 +29,8 @@ jobs:
       - uses: turnerlabs/contentai-action@master
         name: Deploy to ContentAI
         with:
-          args: deploy my_extractor \
-            -e SECRET=$SECRET \
-            --cpu 1024 \
-            --memory 8192          
+          args: deploy my_extractor -e SECRET=$SECRET --cpu 1024 --memory 8192
         env:
           API_KEY: ${{ secrets.API_KEY }}
+          SECRET: ${{ secrets.SECRET }}
 ```
