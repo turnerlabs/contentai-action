@@ -1,7 +1,7 @@
 FROM ubuntu
 
 # install contentai and docker clis
-ENV CONTENTAI_VERSION v0.10.0
+ENV CONTENTAI_VERSION v0.11.0
 ENV DOCKER_VERSION 19.03.6
 
 RUN apt-get update && \
